@@ -1,0 +1,994 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "S-CoreDream-6Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "맑은 고딕", 돋움, serif;
+  letter-spacing: 3px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #0F044C;
+  font-size: 16px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "S-CoreDream-6Bold";
+  color: #EEEEEE;
+}
+
+h2 {
+  font-size: 21px;
+  color: #EEEEEE;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #EEEEEE;
+}
+
+h4 {
+  font-size: 20px;
+  color: #EEEEEE;
+}
+
+strong {
+  font-size: 18px;
+  line-height: 24px;
+  color: #EEEEEE;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #EEEEEE;
+}
+
+span {
+  display: block;
+}
+
+section {
+  position: relative;
+}
+
+address {
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+  color: #EEEEEE;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  background-color: #141E61;
+}
+header div.grid .mobile-ver {
+  display: block;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .mobile-ver {
+    display: none;
+  }
+}
+header div.grid .mobile-ver .git-menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 60px;
+  padding-right: 23px;
+}
+header div.grid .mobile-ver .git-menu .git-img {
+  width: 30px;
+  margin-right: 23px;
+}
+header div.grid .mobile-ver .git-menu #menu-btn {
+  cursor: pointer;
+  width: 30px;
+  display: block;
+}
+header div.grid .mobile-ver .git-menu #menu-btn span {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #373256;
+}
+header div.grid .mobile-ver .git-menu #menu-btn span:last-child {
+  margin-bottom: 0;
+}
+header div.grid .mobile-ver .git-menu #close-btn {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+header div.grid .mobile-ver .git-menu #close-btn span {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  width: 30px;
+  height: 5px;
+  background-color: #373256;
+}
+header div.grid .mobile-ver .git-menu #close-btn span:first-child {
+  transform: rotate(45deg);
+}
+header div.grid .mobile-ver .git-menu #close-btn span:last-child {
+  transform: rotate(-45deg);
+  margin-bottom: 0;
+}
+header div.grid .potfolio {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+header div.grid .potfolio .title {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .title h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .title h1 {
+    font-size: 100px;
+  }
+}
+header div.grid .potfolio .title .line-img {
+  width: 275px;
+  margin: 0 auto;
+  margin-top: -27px;
+  transform: translateX(-1px);
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .title .line-img {
+    width: 550px;
+    margin-top: -50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .title .line-img {
+    width: 650px;
+    margin-top: -70px;
+  }
+}
+header div.grid .potfolio .title .pot-planet {
+  position: absolute;
+  bottom: 5px;
+  right: -10px;
+  width: 25px;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .title .pot-planet {
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+    width: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .title .pot-planet {
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+    width: 70px;
+  }
+}
+header div.grid .potfolio h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio h2 {
+    font-size: 50px;
+  }
+}
+header div.grid .potfolio h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio h3 {
+    font-size: 45px;
+  }
+}
+header div.grid .potfolio .audio-box {
+  position: absolute;
+  top: -57px;
+  left: 5px;
+  width: 48%;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .audio-box {
+    position: static;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .audio-box {
+    width: 320px;
+  }
+}
+header div.grid .potfolio .audio-box audio {
+  width: 100%;
+}
+header div.grid .potfolio nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: right;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio nav {
+    display: block;
+    position: static;
+    background-color: #141E61;
+  }
+}
+header div.grid .potfolio nav .gnb {
+  display: flex;
+  flex-flow: column wrap;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio nav .gnb {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+}
+header div.grid .potfolio nav .gnb li {
+  padding: 5px;
+  border-bottom: 1px solid #0F044C;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio nav .gnb li {
+    margin-right: 58px;
+    padding: 0;
+    border: 0;
+  }
+  header div.grid .potfolio nav .gnb li a {
+    font-size: 25px;
+    color: #EEEEEE;
+  }
+  header div.grid .potfolio nav .gnb li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio nav .gnb li {
+    margin-right: 78px;
+  }
+  header div.grid .potfolio nav .gnb li a {
+    font-size: 30px;
+  }
+}
+header div.grid .potfolio .pot-text {
+  margin-left: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .pot-text {
+    text-align: left;
+  }
+}
+header div.grid .potfolio .pot-text p {
+  display: inline-block;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .pot-text p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .pot-text p {
+    font-size: 20px;
+  }
+}
+header div.grid .potfolio .pot-address {
+  text-align: center;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .pot-address {
+    text-align: left;
+  }
+}
+header div.grid .potfolio .pot-address address {
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  header div.grid .potfolio .pot-address address {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header div.grid .potfolio .pot-address address {
+    font-size: 20px;
+  }
+}
+header .space-planet .planet:first-child {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  header .space-planet .planet:first-child {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .space-planet .planet:first-child {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 180px;
+  }
+}
+header .space-planet .planet:nth-child(2) {
+  position: absolute;
+  bottom: 220px;
+  left: 10px;
+  width: 60px;
+}
+@media screen and (min-width: 768px) {
+  header .space-planet .planet:nth-child(2) {
+    position: absolute;
+    bottom: 350px;
+    left: 50px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .space-planet .planet:nth-child(2) {
+    position: absolute;
+    bottom: 220px;
+    left: 80px;
+    width: 120px;
+  }
+}
+header .space-planet .planet:last-child {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  width: 60px;
+}
+@media screen and (min-width: 768px) {
+  header .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    width: 180px;
+  }
+}
+
+main {
+  background-color: #0F044C;
+}
+main section h2 {
+  font-size: 0;
+}
+main section h3 {
+  display: inline-block;
+  border: 1px solid #EEEEEE;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  main section h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section h3 {
+    font-size: 35px;
+  }
+}
+main section div.grid .potfolio-info {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 40px;
+}
+main section div.grid .potfolio-info .profile {
+  position: relative;
+  padding: 0 30px;
+}
+main section div.grid .potfolio-info .profile h4 {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile h4 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile p {
+    font-size: 20px;
+  }
+}
+main section div.grid .potfolio-info .profile .my-info {
+  position: relative;
+}
+main section div.grid .potfolio-info .profile .my-info div {
+  margin-bottom: 20px;
+}
+main section div.grid .potfolio-info .profile .my-img {
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  width: 150px;
+  z-index: 1;
+  transform: translateX(80%);
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .my-img {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    width: 250px;
+    transform: translateX(50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile .my-img {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    width: 300px;
+  }
+}
+main section div.grid .potfolio-info .profile .motto {
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .motto {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 180px;
+    height: 250px;
+  }
+}
+main section div.grid .potfolio-info .profile .motto p b {
+  font-size: 20px;
+  color: #FF0000;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .motto p b {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile .motto p b {
+    font-size: 30px;
+  }
+}
+main section div.grid .potfolio-info .profile .motto p strong {
+  font-size: 20px;
+  color: #00FF00;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .motto p strong {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile .motto p strong {
+    font-size: 24px;
+  }
+}
+main section div.grid .potfolio-info .profile .self-introduction p b {
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .self-introduction p b {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile .self-introduction p b {
+    font-size: 26px;
+  }
+}
+main section div.grid .potfolio-info .profile .self-introduction p b:first-child {
+  color: #FF0000;
+}
+main section div.grid .potfolio-info .profile .self-introduction p b:last-child {
+  color: #00FF00;
+}
+main section div.grid .potfolio-info .profile .self-introduction p strong {
+  font-size: 26px;
+  color: #00FF00;
+}
+@media screen and (min-width: 768px) {
+  main section div.grid .potfolio-info .profile .self-introduction p strong {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section div.grid .potfolio-info .profile .self-introduction p strong {
+    font-size: 30px;
+  }
+}
+main section .grid-star-img .star:first-child {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 40px;
+}
+main section .grid-star-img .star:nth-child(2) {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 30px;
+}
+main section .grid-star-img .star:nth-child(3) {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  width: 20px;
+}
+main section .grid-star-img .star:nth-child(4) {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 10px;
+}
+main section .grid-star-img .star:nth-child(5) {
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  width: 20px;
+}
+main section .grid-star-img .star:nth-child(6) {
+  position: absolute;
+  top: 350px;
+  right: 150px;
+  width: 30px;
+}
+main section .grid-star-img .star:nth-child(7) {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+  width: 20px;
+}
+main section .grid-star-img .star:last-child {
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+  width: 10px;
+}
+main section .planet5 {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  main section .planet5 {
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section .planet5 {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 150px;
+  }
+}
+main section:nth-child(2) div.grid .potfolio-sk {
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  background-color: #0F044C;
+}
+main section:nth-child(2) div.grid .potfolio-sk .program-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+main section:nth-child(2) div.grid .potfolio-sk .program-list div {
+  z-index: 1;
+  margin-bottom: 20px;
+}
+main section:nth-child(2) div.grid .potfolio-sk .program-list div h4:first-child {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 40px;
+  text-align: center;
+  box-shadow: inset -5px 5px 0px 0px rgba(255, 255, 255, 0.8), inset 5px -5px 0px 0px rgba(20, 30, 97, 0.5);
+  border-radius: 50%;
+  background-color: #787A91;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(2) div.grid .potfolio-sk .program-list div h4:first-child {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 70px;
+    text-align: center;
+    box-shadow: inset -5px 5px 0px 0px rgba(255, 255, 255, 0.8), inset 5px -5px 0px 0px rgba(20, 30, 97, 0.5);
+    border-radius: 50%;
+    background-color: #787A91;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:nth-child(2) div.grid .potfolio-sk .program-list div h4:first-child {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 90px;
+    text-align: center;
+    box-shadow: inset -5px 5px 0px 0px rgba(255, 255, 255, 0.8), inset 5px -5px 0px 0px rgba(20, 30, 97, 0.5);
+    border-radius: 50%;
+    background-color: #787A91;
+  }
+}
+main section:nth-child(2) div.grid .potfolio-sk .program-list div:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(2) div.grid .potfolio-sk .program-list div:last-child {
+    margin: 0 auto;
+  }
+}
+main section:nth-child(2) .space-planet .planet:first-child {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(2) .space-planet .planet:first-child {
+    position: absolute;
+    top: 30px;
+    right: 350px;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:nth-child(2) .space-planet .planet:first-child {
+    position: absolute;
+    top: 30px;
+    right: 650px;
+    width: 150px;
+  }
+}
+main section:nth-child(2) .space-planet .planet:last-child {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(2) .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:nth-child(2) .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    width: 150px;
+  }
+}
+main section:nth-child(3) div.grid .potfolid-pro {
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  background-color: #0F044C;
+}
+main section:nth-child(3) div.grid .potfolid-pro .project {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+main section:nth-child(3) div.grid .potfolid-pro .project div {
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  margin-bottom: 30px;
+  background-color: #000;
+}
+main section:nth-child(3) div.grid .potfolid-pro .project div video {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(3) div.grid .potfolid-pro .project div {
+    width: 47.619047619%;
+    height: 300px;
+  }
+}
+main section:nth-child(3) .planet6 {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  main section:nth-child(3) .planet6 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:nth-child(3) .planet6 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 150px;
+  }
+}
+main section:last-child div.grid .potfolio-co {
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  background-color: #0F044C;
+}
+main section:last-child div.grid .potfolio-co .coding {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-site {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child div.grid .potfolio-co .coding .web-site {
+    flex-wrap: nowrap;
+  }
+}
+main section:last-child div.grid .potfolio-co .coding .web-site div {
+  z-index: 1;
+  margin-bottom: 20px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-site div a {
+  height: 100%;
+}
+main section:last-child div.grid .potfolio-co .coding .web-site div a img {
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child div.grid .potfolio-co .coding .web-site div {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+main section:last-child div.grid .potfolio-co .coding .web-site div:first-child {
+  width: 100%;
+}
+main section:last-child div.grid .potfolio-co .coding .web-site div:nth-child(3) {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child div.grid .potfolio-co .coding .web-site div:nth-child(3) {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section:last-child div.grid .potfolio-co .coding .web-site div.jobul:first-child {
+    display: none;
+  }
+}
+main section:last-child div.grid .potfolio-co .coding .web-site .info-text h4 {
+  margin-bottom: 10px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-site .info-text p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-btn {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-btn button {
+  cursor: pointer;
+  padding: 5px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-btn button:first-child {
+  margin-right: 20px;
+}
+main section:last-child div.grid .potfolio-co .coding .web-btn button:hover {
+  color: white;
+  background-color: violet;
+}
+main section:last-child div.grid .potfolio-co p {
+  text-align: center;
+}
+main section:last-child .space-planet .planet:first-child {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child .space-planet .planet:first-child {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:last-child .space-planet .planet:first-child {
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    width: 150px;
+  }
+}
+main section:last-child .space-planet .planet:last-child {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 50px;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:last-child .space-planet .planet:last-child {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 130px;
+  }
+}
+main section:last-child .space-rocket {
+  position: absolute;
+  bottom: 12px;
+  right: 5px;
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  main section:last-child .space-rocket {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 100px;
+    transform: rotate(0deg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  main section:last-child .space-rocket {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 150px;
+  }
+}
+
+footer {
+  background-color: #141E61;
+}
+footer div.grid {
+  display: flex;
+  align-items: center;
+}
+footer div.grid .footer-copy {
+  margin: 0 auto;
+}
+footer div.grid .foter-git {
+  display: none;
+  width: 30px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+@media screen and (min-width: 768px) {
+  footer div.grid .foter-git {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer div.grid .foter-git {
+    width: 50px;
+  }
+}/*# sourceMappingURL=index.css.map */
